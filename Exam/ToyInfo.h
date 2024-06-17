@@ -1,7 +1,8 @@
 #pragma once
 #include "Toy.h"
+#include "Constructor.h"
 
-class ToyInfo : public Toy {
+class ToyInfo : public Toy{
 public:
 	//Constructors
 	ToyInfo();
@@ -9,7 +10,7 @@ public:
 	ToyInfo(const ToyInfo& other);
 
 	//Destructor
-	~ToyInfo() = default;
+	~ToyInfo() override = default;
 
 	//Getters
 	const std::string& getTitleToy() const;

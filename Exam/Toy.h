@@ -33,7 +33,7 @@ public:
 	void setAgeLimitsKids(const AgeLimits& ageLimitsKids);
 
 	//Methods
-	void findFirmCostByAgeLimits(const AgeLimits ageLimits);
+	void findFirmCostByAgeLimits(AgeLimits ageLimits);
 
 	virtual void printInfo();
 

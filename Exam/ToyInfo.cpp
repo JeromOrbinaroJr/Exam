@@ -22,7 +22,10 @@ void ToyInfo::setMaterialOfToy(const std::string& materialOfToy) { m_materialOfT
 
 //Methods
 void ToyInfo::printInfo() {
-	std::cout << "Toy Info" << std::endl;
+	std::cout << "*Toy Info*" << std::endl;
+	std::cout << "Firm: " << m_firm << std::endl;
+	std::cout << "Cost: " << m_cost << std::endl;
+	std::cout << "Age Limits Kids: " << m_ageLimitsKids.m_startLimitAge << " - " << m_ageLimitsKids.m_endLimitAge << std::endl;
 	std::cout << "Title toy: " << m_titleToy << std::endl;
 	std::cout << "Type of toy: " << m_typeOfToy << std::endl;
 	std::cout << "Material of toy: " << m_materialOfToy << std::endl;
@@ -32,7 +35,6 @@ void ToyInfo::printInfo() {
 std::ostream& operator<<(std::ostream& os, const ToyInfo& toyInfo) {
 	os << toyInfo.m_firm << " " << toyInfo.m_cost << " " << toyInfo.m_titleToy
 		<< " " << toyInfo.m_typeOfToy << " " << toyInfo.m_materialOfToy;
-	
 	return os;
 }
 

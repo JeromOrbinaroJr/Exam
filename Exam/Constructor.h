@@ -2,7 +2,7 @@
 #include "Toy.h"
 #include <sstream>
 
-class Constructor : public Toy {
+class Constructor : public virtual Toy {
 public:
 	//Constructor
 	Constructor();
@@ -10,7 +10,7 @@ public:
 	Constructor(const Constructor& other);
 
 	//Destructor
-	~Constructor() = default;	
+	~Constructor() override = default;	
 
 	//Getters
 	const std::string& getConstructorTitle() const;

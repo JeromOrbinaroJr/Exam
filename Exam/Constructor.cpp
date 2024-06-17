@@ -24,10 +24,16 @@ void Constructor::findNumberOfPartsCostByTitle(const std::string& title) {
 		std::cout << "Number of Parts: " << m_numberOfParts << std::endl;
 		std::cout << "Cost: " << m_cost << std::endl;
 	}
+	else {
+		throw std::runtime_error("Impossible.");
+	}
 }
 
 void Constructor::printInfo() {
-	std::cout << "Constructor" << std::endl;
+	std::cout << "*Constructor*" << std::endl;
+	std::cout << "Firm: " << m_firm << std::endl;
+	std::cout << "Cost: " << m_cost << std::endl;
+	std::cout << "Age Limits Kids: " << m_ageLimitsKids.m_startLimitAge << " - " << m_ageLimitsKids.m_endLimitAge << std::endl;
 	std::cout << "Constructor title: " << m_constructorTitle << std::endl;
 	std::cout << "Number of parts: " << m_numberOfParts << std::endl;
 }
